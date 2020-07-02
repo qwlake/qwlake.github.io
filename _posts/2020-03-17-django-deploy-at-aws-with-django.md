@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Django 프로젝트 AWS에 배포하기 (+Docker, Nginx, PostgreSQL)"
-date: 2020-03-17T12:00:00-09:00
+title: "Django 프로젝트 AWS에 배포하기"
+subtitle: "+ Docker, Nginx, PostgreSQL"
 author: qwlake
 categories: Django
 tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 ---
-
-***#gunicorn #Nginx #PostgreSQL #Docker #Docker-compose***
 
 # 서론
 

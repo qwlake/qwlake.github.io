@@ -14,11 +14,13 @@ multilingual: true
     {{ about_kr | markdownify }}
 </div>
 
+{% comment %}
 <!-- English Version -->
-<!-- <div class="en post-container">
+<div class="en post-container">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
-</div> -->
+</div>
+{% endcomment %}
 
 
 {% if site.disqus_username %}
