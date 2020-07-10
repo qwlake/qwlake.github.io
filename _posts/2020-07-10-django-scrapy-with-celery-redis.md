@@ -34,7 +34,7 @@ services:
 
 ...
 
-		celery:
+    celery:
         build: .
         container_name: celery01
         command: celery worker --app=crawling.tasks --loglevel=INFO
@@ -59,7 +59,7 @@ Django의 `settings.py`의 `INSTALLED_APPS`에 `celery`를 추가한다.
 
 ```python
 INSTALLED_APPS = [
-		...
+    ...
     'celery',
     ...
 ]
@@ -133,7 +133,7 @@ services:
 
 ...
 
-		redis:
+    redis:
         image: redis:6.0-rc4
         container_name: redis01
         ports:
