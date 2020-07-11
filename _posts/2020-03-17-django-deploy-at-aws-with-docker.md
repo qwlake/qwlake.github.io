@@ -11,9 +11,8 @@ tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 
 본 프로젝트는 원래 멋쟁이 사자처럼 7기 중앙 해커톤의 결과물이다. 때문에 프로젝트는 배포 목적도 아니었고, 윈도우에서 작업하던 것이라 위와 같은 스택을 사용할 일이 없었다. 하지만 애써 만들어 놓은 사이트 묵히기도 아깝고, 코드만 달랑 보여주면 이게 어느 정도의 완성도를 갖춘 사이트인지, 무슨 사이트인지 모르기 때문에 AWS에 배포하기로 생각했다.
 
-프로젝트 GitHub: [https://github.com/qwlake/eot](https://github.com/qwlake/eot)
-
-배포한 사이트 주소: [http://resume-make.shop/](http://resume-make.shop/)
+ - 프로젝트 GitHub: [https://github.com/qwlake/eot](https://github.com/qwlake/eot)
+ - 배포한 사이트 주소: [http://resume-make.shop/](http://resume-make.shop/)
 
 ​
 
@@ -21,7 +20,10 @@ tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 
 기존의 작업환경은 다음과 같았다.
 
-윈도우10 64bit, Django 2.2.2, Python 3.7, SQLight3(Django 기본 db)
+ - 윈도우10 64bit
+ - Django 2.2.2
+ - Python 3.7
+ - SQLight3(Django 기본 db)
 
 또한 웹서버 세팅(Nginx)과 wsgi 세팅(gunicorn)이 안 되어 있다.
 
@@ -30,35 +32,15 @@ tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 # 목표
 
 1. 배포 시에 다중 접속을 받아낼 수 있는 서버 세팅으로 바꾸기
-
 2. Django 기본 db인 SQLight를 걷어내고 PostgreSQL로 바꾸기
-
 3. AWS에 프로젝트를 옮기기 위한 Docker 이미지 만들기
-
 4. AWS에 Docker 이미지와 프로젝트 코드 올리고 배포
-
-​
 
 1번의 이유는 확장성 때문이다.
 
-​
+2번의 이유는 Docker를 한 번 써보고 싶기도 했고, AWS에서 처음부터 개발하는 것이 아닌, 기존 프로젝트를 옮기는 것이라 도커를 테스트해볼 수 있는 기회이기도 했다. *[도커와 컨테이너를 꼭 사용해야 하는 이유](http://www.ciokorea.com/news/39829)*
 
-2번의 이유는 Docker를 한 번 써보고 싶기도 했고, AWS에서 처음부터 개발하는 것이 아닌, 기존 프로젝트를 옮기는 것이라 도커를 테스트해볼 수 있는 기회이기도 했다.
-
-*[도커와 컨테이너를 꼭 사용해야 하는 이유](http://www.ciokorea.com/news/39829)*
-
-​
-
-3번의 이유는 Django(장고)는 웹 어플리케이션이기 때문이다. 웹 어플리케이션과 웹 서버는 다르다.
-
-웹 어플리케이션(예 Django)은 python(파이썬) 등의 언어를 이용해서 여러 가지 처리를 할 수 있지만, 외부로부터의 다중 접속을 받지 못한다.
-
-웹 서버(예 Nginx)는 웹 어플리케이션과는 반대다.
-
-여기서 하나가 더 필요한데 웹 서버로부터 받은 요청을 웹 어플리케이션에 전달할 수 있는 미들웨어(예 gunicorn)가 필요하다.
-
-*[웹 서버?, WSGI, 웹 프레임워크?](https://qkr0990.github.io/development/2017/08/29/note.html)*
-
+3번의 이유는 Django(장고)는 웹 어플리케이션이기 때문이다. 웹 어플리케이션과 웹 서버는 다르다. 웹 어플리케이션(예 Django)은 python(파이썬) 등의 언어를 이용해서 여러 가지 처리를 할 수 있지만, 외부로부터의 다중 접속을 받지 못한다. 웹 서버(예 Nginx)는 웹 어플리케이션과는 반대다. 여기서 하나가 더 필요한데 웹 서버로부터 받은 요청을 웹 어플리케이션에 전달할 수 있는 미들웨어(예 gunicorn)가 필요하다. *[웹 서버?, WSGI, 웹 프레임워크?](https://qkr0990.github.io/development/2017/08/29/note.html)*
 
 
 # 시작하기 전에
@@ -82,7 +64,6 @@ tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 config 폴더 안에 nginx 폴더를 생성하고 그 안에 `nginx.conf` 파일을 생성해준다. 이 파일은 Nginx의 설정파일이다.
 
 ​
-
 ### **config/nginx/nginx.conf**
 
 ```
@@ -156,23 +137,13 @@ AWS에 올릴 도커 이미지를 만들기 위해서는 Dockerfile 하나 만�
 
 물론 가능하다. 하지만 다른 것들도 이미지가 존재하는데 굳이 우분투 이미지에 설치하는 시간까지 늘일 필요는 없다. 게다가 관리상 힘들다.
 
-​
+그렇다면 여러 개의 이미지를 어떻게 관리할까? 해답은 docker-compose다. *[docker-compose로 개발 환경 구성하기](https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose#%EB%8F%84%EC%BB%A4-%EC%BB%B4%ED%8F%AC%EC%A6%88%EB%A1%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0)*
 
-그렇다면 여러 개의 이미지를 어떻게 관리할까? 해답은 docker-compose다.
-
-*[docker-compose로 개발 환경 구성하기](https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose#%EB%8F%84%EC%BB%A4-%EC%BB%B4%ED%8F%AC%EC%A6%88%EB%A1%9C-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0)*
-
-나의 경우에는 우분투 이미지를 베이스로 Django, Nginx, PostgreSQL 이미지를 얹었다.
-
-​작업폴더의 src 폴더에 장고 프로젝트를 넣는다. 이후 작업폴더에 다음의 두 파일을 만든다.
-
-​
+나의 경우에는 우분투 이미지를 베이스로 Django, Nginx, PostgreSQL 이미지를 얹었다. 작업폴더의 src 폴더에 장고 프로젝트를 넣는다. 이후 작업폴더에 다음의 두 파일을 만든다.
 
 ### **docker-compose.yml**
 
-주석으로 자세하게 설명해 놓았다. 위에서부터 차근차근 보길 바란다.
-
-주석을 달고 실행해봤는데 실행이 안 된다. syntax 오류인 듯한데 어느 부분이 잘못됐는지 모르겠다. **코드 복사가 필요하면 다음 링크에서 복사해 사용하자.** [https://github.com/qwlake/eot/blob/master/docker-compose.yml](https://github.com/qwlake/eot/blob/master/docker-compose.yml)
+주석으로 자세하게 설명해 놓았다. 위에서부터 차근차근 보길 바란다. 단, 주석을 달고 실행해봤는데 실행이 안 된다. syntax 오류인 듯한데 어느 부분이 잘못됐는지 모르겠다. **코드 복사가 필요하면 다음 링크에서 복사해 사용하자.** [https://github.com/qwlake/eot/blob/master/docker-compose.yml](https://github.com/qwlake/eot/blob/master/docker-compose.yml)
 
 ```docker
 version: "3"                                                # docker-compose 버전이다
@@ -392,11 +363,7 @@ i. `키 페어 이름`을 적절히 적은 후 `키 페어 다운로드`를 한 
 
 ### Elastic IP (탄력적 IP) 할당
 
-​
-
 인스턴스 생성은 끝났다. 이 인스턴스에는 자동으로 IP 주소가 부여되는데, 이는 인스턴스를 재부팅할 때마다 바뀐다. 때문에 고정 IP 주소를 할당해 주겠다. 주의해야할 점이 있는데 탄력적 IP를 생성해 두고 **인스턴스에 연결하지 않으면 요금이 부과**된다.
-
-​
 
 a. EC2 대시보드에서 좌측 메뉴에 `탄력적 IP` 클릭
 
@@ -421,8 +388,6 @@ e. 인스턴스를 방금 생성한 인스턴스로 선택하고, 프라이빗 I
 ---
 
 ### **보안 그룹 설정**
-
-​
 
 탄력적 IP 연결은 끝이다. 이제 외부에서 인스턴스로 접근하기 위한 80번 포트를 열어주겠다. 기본적으로 22번 포트(ssh)는 활성화 되지만 웹사이트를 위한 기본 포트(80번은)는 막혀있다. EC2 대시보드의 좌측 메뉴에서 `보안 그룹`으로 이동한다.
 
@@ -453,8 +418,6 @@ f. 우측 하단의 `Save rules`를 눌러 종료
 ---
 
 ### **SSH 사용하여 인스턴스 접속**
-
-​
 
 AWS 설정은 끝났다. 생성한 인스턴스에 접속하자. 접속은 먼저 SSH로 할건데,
 
@@ -500,8 +463,6 @@ i. 접속한 모습
 
 ### **샘플 Django 프로젝트 실행**
 
-​
-
 접속 후 docker를 설치하고 git에서 프로젝트를 다운로드하여 실행해보자. 제일 먼저 접속된 SSH상에서 다음의 명령어를 입력한다. 혹시 에러가 난다면 다시 입력해보자.
 
 ```
@@ -537,14 +498,7 @@ sudo docker-compose up --build
 
 이제 AWS에서 받은 탄력적 IP(내 경우는 [http://15.165.211.41/](http://15.165.211.41/))로 들어가면 위와 같은 화면을 볼 수 있다. 페이지는 간단한 Bootstrap 예제를 넣어놨다. 여러분 마음대로 수정해 보도록 하자.
 
----
-
-아직 모르는 것이 많지만 질문 댓글은 환영이다.
-
-​
-
 # Reference
 
-[https://inma.tistory.com/125](https://inma.tistory.com/125)
-
-[https://ruddra.com/posts/docker-django-nginx-postgres/](https://ruddra.com/posts/docker-django-nginx-postgres/)
+ - [https://inma.tistory.com/125](https://inma.tistory.com/125)
+ - [https://ruddra.com/posts/docker-django-nginx-postgres/](https://ruddra.com/posts/docker-django-nginx-postgres/)
