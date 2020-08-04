@@ -3,9 +3,8 @@ layout: page
 description: "어서오세요, 반갑습니다 :)"
 ---
 
-<header class="site-category">
+<div class="container">
     <ul>
-      
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -15,9 +14,8 @@ description: "어서오세요, 반갑습니다 :)"
           {% endif %}
         {% endif %}
       {% endfor %}
-      
   </ul>
-</header>
+</div>
 
 {% for post in paginator.posts %}
 <div class="post-preview">
