@@ -47,10 +47,12 @@ tags: Algorithm Baekjoon KOI C DP
 #include <stdio.h>
 
 int a[8][8] = {0,};
-int d[4][2] = {{-1, 0}, 	// up
-			   {0, 1}, 		// right
-			   {1, 0}, 		// down
-			   {0, -1}};	// left
+int d[4][2] = {
+	{-1, 0}, 		// up
+	{0, 1}, 		// right
+	{1, 0}, 		// down
+	{0, -1}			// left
+};
 int opp[7] = {0,};
 
 void findOpposite(int path[7], int direction, int cnt, int x, int y, int n) {
