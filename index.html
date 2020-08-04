@@ -3,6 +3,22 @@ layout: page
 description: "어서오세요, 반갑습니다 :)"
 ---
 
+<header class="site-category">
+    <h1>Category</h1>
+    <ul>
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+            {% if node.title != null %}
+                {% if node.layout == "category" %}
+                    <li><h4><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                    href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></h4></li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <hr>
+</header>
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
