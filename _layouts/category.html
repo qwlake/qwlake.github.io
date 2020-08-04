@@ -1,25 +1,17 @@
 ---
-layout: default
+layout: page
 ---
 
-<!-- Post Header -->
-{% include intro-header.html type='post' %}
-
-<div class="category-wrap">
-  <h1 class="category-title">Category</h1>
-  <ul class="posts-list">
-    
-    {% assign category = page.category | default: page.title %}
-    {% for post in site.categories[category] %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-          </a>
-          <small>{{ post.date | date_to_string }}</small>
-        </h3>
-      </li>
-    {% endfor %}
-    
-  </ul>
-</div>
+<ul class="posts-list">
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <li>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+        <small>{{ post.date | date_to_string }}</small>
+      </h3>
+    </li>
+  {% endfor %}
+</ul>
