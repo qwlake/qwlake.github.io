@@ -3,7 +3,7 @@ layout: post
 title: "Django 프로젝트 AWS에 배포하기"
 subtitle: "+ Docker, Nginx, PostgreSQL"
 author: qwlake
-categories: Django
+categories: Django AWS Docker
 tags: Django AWS EC2 gunicorn Nginx PostgreSQL Docker Docker-compose
 ---
 
