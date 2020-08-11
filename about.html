@@ -7,21 +7,20 @@ multilingual: true
 ---
 
 {% include multilingual-sel.html %}
+{% include about/kr.html %}
 
 <!-- Korean Version -->
+{% comment %}
 <div class="kr post-container">
     {% capture about_kr %}{% include about/kr.md %}{% endcapture %}
     {{ about_kr | markdownify }}
 </div>
 
-{% comment %}
 <!-- English Version -->
 <div class="en post-container">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
-{% endcomment %}
-
 
 {% if site.disqus_username %}
 <!-- disqus start -->
@@ -47,3 +46,4 @@ multilingual: true
 </script>
 <!-- disqus end -->
 {% endif %}
+{% endcomment %}

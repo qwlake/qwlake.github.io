@@ -1,0 +1,615 @@
+<style>
+/* webkit printing magic: print all background colors */
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style>
+<article id="d454b0ef-8687-45dc-ba4a-286ee968a4bc" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🙋🏻‍♂️</span></div><h1 class="page-title">오정우 Oh Jungwoo</h1></header><div class="page-body"><p id="1c0f4b62-7604-48b5-bf47-273e5ede5980" class="">CI/CD와 TDD를 중요시 여기며, 
+Docker와 k8s를 통한 서버 개발에 매력을 느끼는 주니어 개발자입니다.</p><h3 id="89516618-e8e2-452e-a2fb-fc7e91ecfd9a" class=""><mark class="highlight-orange">Contact.</mark></h3><p id="5718b036-7c3d-4aca-a041-35f05bf5f695" class=""><strong>Tel </strong>- <a href="tel:01048201442">010-4820-1442</a></p><p id="513ae68d-64de-43fa-9aa5-a31b9cc19fb0" class=""><strong>Mail </strong>- <a href="mailto:qwlake@gmail.com">qwlake@gmail.com</a></p><h3 id="44bfe978-97c8-40fb-9d84-f334acf12f53" class=""><mark class="highlight-orange">Channel.</mark></h3><p id="4366111d-09ea-45d2-8c15-16ce8732f502" class=""><strong>Github </strong>- <a href="https://github.com/qwlake">https://github.com/qwlake</a></p><p id="5709e0b2-2e12-4837-8e5e-baefbda0e867" class=""><strong>Web </strong>- <a href="https://qwlake.github.io/">https://qwlake.github.io</a></p><p id="58377c3e-8c14-4502-92f2-d69accd5a758" class="">
+</p><hr id="1a3be75b-d504-45d8-87eb-7d833334865f"/><h1 id="339f7a8c-4dc9-4904-b927-59923abaf61a" class=""><mark class="highlight-orange">Toy Project</mark></h1><h2 id="b0e68aaa-0177-490e-81c3-b4543e1c5237" class="">강원대 공지 구독 어플</h2><p id="336548ed-4ba1-4538-a07e-0a524ea4b886" class="">수십 개의 공지 게시판 중에서 원하는 게시판을 선택하거나 키워드를 등록하여 구독받아 볼 수 있는 어플</p><p id="02db4316-7677-4a60-87ed-ad922dfe7822" class="">Django · Python · Celery · DRF(Django REST framework) · Docker · CircleCI · AWS EC2 · Nginx · PostgreSQL</p><div id="06e988be-7caa-4eba-b9f0-ce777a0ebe28" class="column-list"><div id="3fd40bac-d07e-45cd-9b25-e36cc4d1b9d7" style="width:31.25%" class="column"><p id="2c42bf08-fc07-413b-b395-9c29f6d3e468" class=""><strong>크롤링, API 서버 개발 담당</strong></p><p id="d4297b35-6838-4cd1-a2e6-7b01b177fd60" class="">팀구성: 안드로이드3, 서버2</p><p id="234f61f6-df6a-455b-b478-ca01e0373f63" class=""><mark class="highlight-gray">2020.05-현재</mark></p><p id="103b7f49-5829-4519-9b73-ee6e0d7cd96a" class="">
+</p><p id="0567cd38-0f71-4f71-984c-3978bb25c717" class="">
+</p><p id="c3739581-e56b-408d-a6dd-84750277ff26" class="">
+</p></div><div id="01a3268b-a4ec-484f-97ca-d696e95af490" style="width:68.75%" class="column"><ul id="611409db-5901-40d0-92fe-2041d130db60" class="bulleted-list"><li>서버 공지 크롤링 파트 개발</li></ul><ul id="7239ecaa-90df-40e1-a6ae-f7337831153d" class="bulleted-list"><li>어플에 정보 전달을 위한 API 서버 개발</li></ul><ul id="d38ab19c-63a1-4f38-a98e-d0a44a7beae1" class="bulleted-list"><li>CI/CD 자동화 구축</li></ul><ul id="20895f73-8d33-4ccf-8acd-6f4885ba8631" class="bulleted-list"><li><a href="https://15.165.178.103/swagger/">https://15.165.178.103/swagger/</a></li></ul><ul id="cfcddece-18f6-465f-8705-bf51b1779947" class="bulleted-list"><li><a href="https://github.com/ppcomp/knu-notice-server">https://github.com/ppcomp/knu-notice-server</a></li></ul></div></div><hr id="02a833d9-3191-482b-92df-a62bc66e1332"/><h2 id="1ab86774-6793-44e3-9393-7c5167b2cf8d" class="">이옷 - 이력서 옷입히기</h2><p id="23fd3791-5533-463d-b524-9068c7c274a1" class="">사용자가 개인정보 입력 시 여러 이력서 템플릿에 사용자의 정보를 삽입하여 제공하는 서비스</p><p id="e0aebcbc-2854-461b-8cf3-9e5d55239263" class="">Django · JavaScript · Ubuntu · Docker</p><div id="3c7be16d-2936-4f1e-8342-322f66c579ef" class="column-list"><div id="e473b731-816c-4a0b-ba47-f969939e2a7a" style="width:31.25%" class="column"><p id="e854d811-365e-44da-89e2-d50937a00c4e" class=""><strong>서버,백엔드 개발 담당</strong></p><p id="e6d50969-18f7-498e-94d4-cd88299ce537" class="">팀구성: 백엔드3, 프론트3</p><p id="c887421e-08f4-4731-809e-307e2c7d6e25" class=""><mark class="highlight-gray">2020.05-현재</mark></p></div><div id="292f383d-0651-40ca-8ccd-49d9e9bd643d" style="width:68.75%" class="column"><ul id="170d3f67-8b44-4816-a4e5-4605d864d1e5" class="bulleted-list"><li>여러 이력서 템플릿(docx 파일)에 사용자 정보 대입 후 서버에 저장하고, 사용자에게 docx, pdf, jpg 파일로 제공하는 파트 개발</li></ul><ul id="0abaa7e3-9ee8-404c-a70d-f22453601414" class="bulleted-list"><li>Docker를 이용하여 패키징 후 AWS EC2에 배포</li></ul><ul id="d38a978e-136e-46d0-8c44-b7d143c0ba29" class="bulleted-list"><li><a href="http://resume-make.shop/">http://resume-make.shop</a></li></ul><ul id="2f0b72bb-69c4-4e32-a583-0770004b3315" class="bulleted-list"><li><a href="https://github.com/qwlake/eot">https://github.com/qwlake/eot</a></li></ul></div></div><p id="685635f0-7111-47c4-8d0c-dfaceda49c25" class="">
+</p><hr id="689e1d05-adae-4a18-9c5d-d16bdb11a691"/><h2 id="81236958-526d-4322-b3be-19838bb85cd6" class="">학교 축제 홍보 및 안내 웹사이트</h2><p id="17aefe6c-5ff4-4e4b-b702-8dcf4757c147" class="">강원대학교의 학교를 홍보하고 축제 구성을 안내하는 사이트</p><p id="75ed4879-cd84-4224-8057-8e3de59caa96" class="">Django · Python · Nginx · PostgreSQL · AWS EC2</p><div id="6ee7e5f6-5be6-4d22-9e32-dbb6d9d0d941" class="column-list"><div id="de62fa89-e288-43bc-a72a-30b8ffb3a8a2" style="width:31.25%" class="column"><p id="122bbba7-e6b5-40d2-8afe-e30318a31419" class=""><strong>백엔드 및 배포 담당</strong></p><p id="f86f4266-8a39-49ce-8fe2-7375deb6db03" class="">팀구성: 백엔드3, 프론트6</p><p id="f8accb8a-2dc7-4205-a3e5-3ec66cc44342" class=""><mark class="highlight-gray">2019.08-2019.09</mark></p></div><div id="98316af5-e036-45d5-b36e-1ce6ff061778" style="width:68.75%" class="column"><ul id="1004b42b-01dd-419a-997b-2698e0f3c537" class="bulleted-list"><li>3개의 게시판 개발 및 AWS EC2에 배포 담</li></ul><ul id="80167918-a7c3-4a99-89ca-b95531f063a9" class="bulleted-list"><li>2019 강원대 축제 기간(5일)동안 방문자 약 9,000 달성</li></ul><ul id="b9dfa5ae-bb4d-4ef6-9986-e3656b35d96d" class="bulleted-list"><li><a href="https://github.com/qwlake/knu-festival">https://github.com/qwlake/knu-festival</a></li></ul></div></div><p id="a1fd429d-b60a-49b9-80fd-c1bbdf862926" class="">
+</p><hr id="53e129b4-b533-4aaa-97ec-c94012f199e3"/><h2 id="2af4e1c4-b1af-4d4d-b750-e971c369cb01" class="">비트코인 자동매매 프로그램</h2><p id="333de0a5-d39f-4750-973a-47297d9ef863" class="">파이썬과 유전 알고리즘을 활용한 주식지표 기반 비트코인 가격 예측 및 자동매매 프로그램</p><p id="b07b6a0b-621d-4dda-a917-1adc0b49ef16" class="">Python · Numpy</p><div id="5ea738d0-dbd7-4cca-9688-473673f6cf2d" class="column-list"><div id="282a6392-a961-45a9-8750-7bb9edb425dc" style="width:25%" class="column"><p id="1eedbddf-486a-4964-8f85-c61df3f16166" class=""><strong>개인</strong></p><p id="c7afbdb6-b559-4062-8361-e222ecb94bba" class=""><mark class="highlight-gray">2020.05-현재</mark></p></div><div id="ecec7567-2b4b-48f4-9b21-82483e5f3fff" style="width:75%" class="column"><ul id="660e8fe0-d59c-4219-990b-3c62bb6a6e36" class="bulleted-list"><li>해외 비트코인 거래소 Poloniex의 API를 사용하여 비트코인의 가격 정보 다운로드</li></ul><ul id="c333810d-6e1a-49fc-b7b5-2be7692bc88b" class="bulleted-list"><li>가격 정보 바탕으로 주식지표 생성</li></ul><ul id="c4be2a20-3707-408c-b342-44ab976d78a2" class="bulleted-list"><li>생성된 주식지표 값 바탕으로 유전 알고리즘을 사용해 가격 예측</li></ul><ul id="daf312ca-aef5-46f8-94eb-d9ea9bc24357" class="bulleted-list"><li>예측된 가격 정보를 바탕으로 자동거래 프로그래밍</li></ul><ul id="315cf1a6-6b1d-46bd-9165-3a0605ab6cdd" class="bulleted-list"><li>머신러닝 프레임워크를 사용하지 않고 순수 Python 사용</li></ul><ul id="fa48dccc-154b-48d2-9f4b-b18f1512e8f6" class="bulleted-list"><li><a href="https://github.com/qwlake/auto-coin-trader">https://github.com/qwlake/auto-coin-trader</a></li></ul></div></div><p id="fd1a025e-a3a3-40e8-b934-9177b8f9ffd6" class="">
+</p><hr id="c38938dd-9693-4ea6-9141-4614aeadaba4"/><h1 id="7ec8e288-d071-4f05-83b5-6a2b96a857d4" class=""><mark class="highlight-orange">Other Experience</mark></h1><h2 id="c76e8486-1d9a-4309-85e8-2040f64a06f0" class=""><a href="https://aws.amazon.com/ko/education/awseducate/student-ambassador-program/">AWS Educate Student Ambassador</a></h2><p id="f555b684-43fb-4b61-a023-7000c4e91cb9" class="">AWS Educate에서 교육과 물질적, 비물질적 지원을 받아 AWS를 홍보하는 학생 대사 프로그램</p><div id="0a233738-0b49-459d-8c7b-bb7b43ef44ff" class="column-list"><div id="21d432c7-d74c-4584-be7c-986bf4ed1583" style="width:18.75%" class="column"><p id="2339c8db-9186-4fc1-89c2-ac9844f321c3" class=""><mark class="highlight-gray">2020.05-현재</mark></p></div><div id="199d4be7-ac58-40dd-9b79-75a41ee961fd" style="width:81.25%" class="column"><ul id="82b54006-548f-4fcd-b21c-5359ed14d1f6" class="bulleted-list"><li>전세계 350여 명의 학생 선발 후 활동 중</li></ul></div></div><p id="80c2032d-a4d5-447e-82d0-0f759df746b5" class="">
+</p><hr id="77ef5ad2-c732-410b-8a27-9c1a369cccb5"/><h2 id="d3830a70-be5f-4a99-852e-1c7d1dad44ea" class=""><a href="https://likelion.net/">멋쟁이 사자처럼 - 학생과정</a></h2><p id="377a69f6-c6bf-4f1e-9503-eccc3294a842" class="">웹사이트를 직접 제작하는 대학생 연합 동아리</p><div id="b2db5a81-8321-45b9-9633-c94ceb7f4537" class="column-list"><div id="fd0db123-9a13-4725-ba68-e06f739208c6" style="width:18.75%" class="column"><p id="83bd49ce-6b8e-44cc-acad-ccfccaf074d1" class=""><mark class="highlight-gray">2019.01-2019.12</mark></p></div><div id="808023ee-9aa4-4529-bf3a-8f220e4f5535" style="width:81.25%" class="column"><ul id="193cc262-9cbc-4305-a793-b9fbb791bbc8" class="bulleted-list"><li>동료와 협업하는 노하우, 서로 함께 발전하는 가치관에 대해 정립하는 계기</li></ul></div></div><p id="46ccbc7d-51e2-4079-9164-7ebfe59dccfc" class="">
+</p><hr id="9542e30b-235b-43c0-a647-3ba2433fb57a"/><h1 id="81c6d407-76f0-4f82-aac1-f91f90bcb108" class=""><mark class="highlight-orange">Skill</mark></h1><ul id="d1e9154f-7b79-44a9-9aea-63669f52f02c" class="bulleted-list"><li>주요: Python, Kotlin(Java), Django</li></ul><ul id="7334e901-f51d-4904-a72c-01d901cddece" class="bulleted-list"><li>그 외: Docker, DRF(Django REST framework), Nginx, Celery, PostgreSQL, AWS EC2, </li></ul><p id="8fac9897-bbf6-452e-9051-4f9429dc3376" class="">
+</p><hr id="fb8503f2-5087-4041-9ed0-dcb0399bafce"/><h1 id="e99e5ea4-a506-4d64-8169-990a69f1253d" class=""><mark class="highlight-orange">Education</mark></h1><p id="cca08112-d170-41bd-9795-d8b076f8d0e5" class="">2015.03-2021.02(예정) 강원대학교 컴퓨터공학 학사 전공</p><p id="2a3d4701-a953-44cc-b3cb-6c480357fbb1" class="">
+</p></div></article>
