@@ -2,7 +2,7 @@
 layout: post
 title: "[Docker] Docker-compose auto-start after lauching AWS EC2 server"
 author: qwlake
-categories: ETC
+categories: Docker
 tags: docker docker-compose 
 ---
 
