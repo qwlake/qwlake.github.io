@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Scrapy
+title: ETC
 hide-in-nav: true
 ---
