@@ -3,7 +3,7 @@ layout: post
 title: "[Scrapy] exceptions.RuntimeError: doWrite called on a twisted.internet.tcp.Port 에러"
 subtitle: "포트 할당 문제"
 author: qwlake
-categories: Scrapy
+categories: ETC
 tags: Scrapy twisted parallel port Error
 ---
 

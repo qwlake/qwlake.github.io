@@ -3,7 +3,7 @@ layout: post
 title: "[Scrapy] 스크래피 LinkExtractor 모든 링크 가져오지 못하는 버그"
 subtitle: "중복된 링크 거르지 않고 모두 가져오기"
 author: qwlake
-categories: Scrapy
+categories: ETC
 tags: Scrapy LinkExtractor Bug
 ---
 

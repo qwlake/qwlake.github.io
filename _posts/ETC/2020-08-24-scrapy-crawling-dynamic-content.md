@@ -3,7 +3,7 @@ layout: post
 title: "[Scrapy] xpath, css selector 안 먹는 현상 해결"
 subtitle: "Dynamic content 크롤링 하기"
 author: qwlake
-categories: Scrapy
+categories: ETC
 tags: Scrapy scrapy-splash splash javascript dom xpath css-selector
 ---
 

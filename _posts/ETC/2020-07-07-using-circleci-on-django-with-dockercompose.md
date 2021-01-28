@@ -3,7 +3,7 @@ layout: post
 title: "[CircleCI] 장고 프로젝트에 Circle CI 적용하기"
 subtitle: "+ Django, docker-compose"
 author: qwlake
-categories: CircleCI
+categories: ETC
 tags: CircleCI Django Docker docker-compose
 ---
 
