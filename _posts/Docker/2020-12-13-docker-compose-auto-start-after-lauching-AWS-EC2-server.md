@@ -7,13 +7,11 @@ tags: docker docker-compose
 ---
 
 1. Enable docker daemon
-
 ```
 sudo systemctl enable docker
 ```
 
 2.  Add `restart` option to `docker-compose.yml`
-
 ```
 web:
     restart: always
