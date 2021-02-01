@@ -41,3 +41,7 @@ WSGI는 리버스 프록시를 지원하지 않음 → Web Server 필요
 
 - Spring은 다중 스레드를 원활히 지원하기 때문
 - 여러 스레드는 하나의 객체(싱글톤 객체)를 사용해서 작업을 한다.
+
+# Reference
+
+[ Django, Python ] ASGI와 WSGI 분석(Analysis of ASGI and WSGI) - [https://nitro04.blogspot.com/2020/01/django-python-asgi-wsgi-analysis-of.html](https://nitro04.blogspot.com/2020/01/django-python-asgi-wsgi-analysis-of.html)
