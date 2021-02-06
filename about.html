@@ -1,16 +1,17 @@
 ---
 layout: page
 title: "About"
-description: "Jungwoo Oh"
 header-img: "img/about-bg.jpg"
 multilingual: true
 ---
 
 {% include multilingual-sel.html %}
+
+{% comment %}
+
 {% include about/kr.html %}
 
 <!-- Korean Version -->
-{% comment %}
 <div class="kr post-container">
     {% capture about_kr %}{% include about/kr.md %}{% endcapture %}
     {{ about_kr | markdownify }}
