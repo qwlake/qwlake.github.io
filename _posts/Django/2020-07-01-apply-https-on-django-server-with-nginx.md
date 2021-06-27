@@ -73,7 +73,7 @@ server {
 server {
     listen 443 ssl;
 
-    ssl_certificate     /etc/nginx/conf.d/django.cert;
+    ssl_certificate     /etc/nginx/conf.d/django.crt;
     ssl_certificate_key /etc/nginx/conf.d/django.key;
     
     access_log          /var/log/nginx/443_access.log;
@@ -123,29 +123,29 @@ services:
 1. `django-sslserver` 설치
     - `requirements.txt` 를 쓴다면 다음을 해당 파일에 추가한다.
 
-```
-django-sslserver==0.22
-```
+        ```
+        django-sslserver==0.22
+        ```
 
-- 그게 아니라면 다음과 같이 `django-sslserver` 를 설치한다.
+    - 그게 아니라면 다음과 같이 `django-sslserver` 를 설치한다.
 
-```bash
-pip install django-sslserver
-```
+        ```bash
+        pip install django-sslserver
+        ```
 
 2. `settings.py` 의 `INSTALLED_APPS` 에 `sslserver` 를 추가한다.
 
-```python
-INSTALLED_APPS = [
-    ....
-    'sslserver',
-]
-```
+    ```python
+    INSTALLED_APPS = [
+        ....
+        'sslserver',
+    ]
+    ```
 
 3. 다음의 명령어로 실행시키면 된다.
 
-```bash
-python manage.py runsslserver --certificate django.cert --key django.key
-```
+    ```bash
+    python manage.py runsslserver --certificate django.cert --key django.key
+    ```
 
 # 끝
