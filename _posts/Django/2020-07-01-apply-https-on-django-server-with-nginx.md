@@ -145,7 +145,7 @@ services:
 3. 다음의 명령어로 실행시키면 된다.
 
     ```bash
-    python manage.py runsslserver --certificate django.cert --key django.key
+    python manage.py runsslserver --certificate django.crt --key django.key
     ```
 
 # 끝
