@@ -4,7 +4,7 @@ title: "[Django] Django auto reload"
 subtitle: "with gunicorn '--reload' option"
 author: qwlake
 categories: Django
-tags: Django gunicorn
+tags: gunicorn
 ---
 
 When you work on django in docker, sometimes it's not might be autoload. I have been shutdown and restart the `docker-compose` process, but, there is cool way.

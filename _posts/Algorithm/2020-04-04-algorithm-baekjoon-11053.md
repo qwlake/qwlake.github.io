@@ -4,7 +4,7 @@ title: "백준 11053번 - 가장 긴 증가하는 부분 수열"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C++ DP
+tags: Baekjoon C++ DP
 ---
 
 [https://www.acmicpc.net/problem/11053](https://www.acmicpc.net/problem/11053)

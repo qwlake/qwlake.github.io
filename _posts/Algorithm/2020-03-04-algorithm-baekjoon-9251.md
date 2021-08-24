@@ -4,7 +4,7 @@ title: "백준 9251번 - LCS"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python DP LCS
+tags: Baekjoon Python DP LCS
 ---
 
 [https://www.acmicpc.net/problem/9251](https://www.acmicpc.net/problem/9251)

@@ -4,7 +4,7 @@ title: "백준 2642번 - 전개도"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI C DP
+tags: Baekjoon KOI C DP
 ---
 
 처음에는 어떻게 접근해야할 지 몰랐지만 알고보니 간단했다.

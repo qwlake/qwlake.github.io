@@ -4,7 +4,7 @@ title: "백준 2668번 - 숫자고르기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI Python
+tags: Baekjoon KOI Python
 ---
 
 [https://www.acmicpc.net/problem/2668](https://www.acmicpc.net/problem/2668)

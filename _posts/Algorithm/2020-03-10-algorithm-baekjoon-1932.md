@@ -4,7 +4,7 @@ title: "백준 1932번 - 정수 삼각형"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C DP
+tags: Baekjoon C DP
 ---
 
 [https://www.acmicpc.net/problem/1932](https://www.acmicpc.net/problem/1932)

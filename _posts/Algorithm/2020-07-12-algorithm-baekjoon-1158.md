@@ -4,7 +4,7 @@ title: "백준 1158번 - 요세푸스 문제"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Array
+tags: Baekjoon Python Array
 ---
 
 # **1158 - 요세푸스 문제**

@@ -4,7 +4,7 @@ title: "백준 7569 - 3차원 토마토"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python BFS Deque
+tags: Baekjoon Python BFS Deque
 ---
 
 # **7569 - 3차원 토마토**

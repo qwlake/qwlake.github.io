@@ -4,7 +4,7 @@ title: "백준 11729 - 하노이 탑 이동 순서"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Recursive DivideAndConquer
+tags: Baekjoon Python Recursive DivideAndConquer
 ---
 
 # **11729 - 하노이 탑 이동 순서**

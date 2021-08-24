@@ -4,7 +4,7 @@ title: "[Django] Celery,Redis로 Scrapy 크롤링 주기적으로 하기"
 subtitle: "+ Docker"
 author: qwlake
 categories: Django
-tags: Django Docker Scrapy Celery Celery-Beat Redis
+tags: Docker Scrapy Celery Celery-Beat Redis
 ---
 
 # 서론

@@ -4,7 +4,7 @@ title: "2019 카카오 겨울 인턴 1번 - 쇠막대기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Programmers Kakao Intern Javascript
+tags: Programmers Kakao Intern Javascript
 ---
 
 [https://programmers.co.kr/learn/courses/30/lessons/42585](https://programmers.co.kr/learn/courses/30/lessons/42585)

@@ -4,7 +4,7 @@ title: "[Django] pytest를 사용한 장고 테스트 환경 구축"
 subtitle: "+ pytest Docker"
 author: qwlake
 categories: Django
-tags: Django test pytest Docker
+tags: test pytest Docker
 ---
 
 # 서론

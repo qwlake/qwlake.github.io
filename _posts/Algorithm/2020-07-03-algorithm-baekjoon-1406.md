@@ -4,7 +4,7 @@ title: "백준 1406번 - 에디터"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Stack
+tags: Baekjoon Python Stack
 ---
 
 # **1406 - 에디터**

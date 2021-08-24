@@ -4,7 +4,7 @@ title: "백준 1413번 - 박스 안의 열쇠"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C++ DP
+tags: Baekjoon C++ DP
 ---
 
 [https://www.acmicpc.net/problem/1413](https://www.acmicpc.net/problem/1413)

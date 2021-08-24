@@ -4,7 +4,7 @@ title: "백준 5397번 - 키로거"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Deque
+tags: Baekjoon Python Deque
 ---
 
 # **5397 - 키로거**

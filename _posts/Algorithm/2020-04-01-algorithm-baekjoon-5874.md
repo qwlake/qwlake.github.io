@@ -4,7 +4,7 @@ title: "백준 5874번 - 소를 찾아라"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java
+tags: Baekjoon Java
 ---
 
 [https://www.acmicpc.net/problem/5874](https://www.acmicpc.net/problem/5874)

@@ -4,7 +4,7 @@ title: "백준 1931번 - 회의실배정"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Greedy
+tags: Baekjoon Python Greedy
 ---
 
 [https://www.acmicpc.net/problem/1931](https://www.acmicpc.net/problem/1931)

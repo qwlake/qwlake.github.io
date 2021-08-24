@@ -4,7 +4,7 @@ title: "백준 16323번 - Intergalactic Bidding"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python
+tags: Baekjoon Python
 ---
 
 [https://www.acmicpc.net/problem/16323](https://www.acmicpc.net/problem/16323)

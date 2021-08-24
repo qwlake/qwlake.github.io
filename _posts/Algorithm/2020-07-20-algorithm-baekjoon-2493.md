@@ -4,7 +4,7 @@ title: "백준 2493번 - 탑"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Stack
+tags: Baekjoon Python Stack
 ---
 
 # **2493 - 탑**

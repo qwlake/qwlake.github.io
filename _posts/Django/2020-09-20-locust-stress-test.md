@@ -3,7 +3,7 @@ layout: post
 title: "[Django] 장고 서버 locust로 부하 테스트"
 author: qwlake
 categories: Django
-tags: Django locust stress-test
+tags: locust stress-test
 ---
 
 ![image](https://user-images.githubusercontent.com/41278416/106115342-0876f580-6194-11eb-98d5-137119a96eba.png)

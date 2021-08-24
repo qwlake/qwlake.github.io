@@ -4,7 +4,7 @@ title: "백준 1463번 - 1로 만들기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python DP
+tags: Baekjoon Python DP
 ---
 
 [https://www.acmicpc.net/problem/1463](https://www.acmicpc.net/problem/1463)

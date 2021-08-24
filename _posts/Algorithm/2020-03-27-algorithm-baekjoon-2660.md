@@ -4,7 +4,7 @@ title: "백준 2660번 - 회장뽑기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI Python
+tags: Baekjoon KOI Python
 ---
 
 [https://www.acmicpc.net/problem/2660](https://www.acmicpc.net/problem/2660)

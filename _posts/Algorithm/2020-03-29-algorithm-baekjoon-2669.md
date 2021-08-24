@@ -4,7 +4,7 @@ title: "백준 2669번 - 직사각형 네개의 합집합의 면적 구하기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI Python
+tags: Baekjoon KOI Python
 ---
 
 [https://www.acmicpc.net/problem/2669](https://www.acmicpc.net/problem/2669)

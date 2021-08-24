@@ -4,7 +4,7 @@ title: "백준 9095번 - 1,2,3 더하기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python DP
+tags: Baekjoon Python DP
 ---
 
 [https://www.acmicpc.net/problem/9095](https://www.acmicpc.net/problem/9095)

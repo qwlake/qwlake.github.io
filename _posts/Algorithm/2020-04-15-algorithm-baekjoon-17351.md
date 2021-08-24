@@ -4,7 +4,7 @@ title: "백준 17351번 - 3루수는 몰라"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python DP
+tags: Baekjoon Python DP
 ---
 
 [https://www.acmicpc.net/problem/17351](https://www.acmicpc.net/problem/17351)

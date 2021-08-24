@@ -4,7 +4,7 @@ title: "백준 4179번 - 불!"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python BFS Deque
+tags: Baekjoon Python BFS Deque
 ---
 
 # **4179 - 불!**

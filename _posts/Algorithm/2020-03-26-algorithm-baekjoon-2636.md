@@ -4,7 +4,7 @@ title: "백준 2636번 - 치즈"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI C
+tags: Baekjoon KOI C
 ---
 
 [https://www.acmicpc.net/problem/2636](https://www.acmicpc.net/problem/2636)

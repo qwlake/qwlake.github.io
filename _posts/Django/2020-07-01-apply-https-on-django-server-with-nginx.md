@@ -4,7 +4,7 @@ title: "[Django] 장고 Rest API 서버 https 프로토콜 적용하기"
 subtitle: "nginx가 있을 때는 어떡하지?"
 author: qwlake
 categories: Django
-tags: Django Model Inheritance OntoOneField
+tags: Model Inheritance OntoOneField
 ---
 
 # 서론

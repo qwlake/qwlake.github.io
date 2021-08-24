@@ -4,7 +4,7 @@ title: "백준 10845번 - 큐"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Queue
+tags: Baekjoon Python Queue
 ---
 
 # **10845 - 큐**

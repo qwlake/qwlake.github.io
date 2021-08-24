@@ -3,7 +3,7 @@ layout: post
 title: "[Docker] Docker-compose auto-start after lauching AWS EC2 server"
 author: qwlake
 categories: Docker
-tags: docker docker-compose 
+tags: docker-compose 
 ---
 
 1. Enable docker daemon

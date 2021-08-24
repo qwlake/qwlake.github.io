@@ -4,7 +4,7 @@ title: "백준 5430번 - AC"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Deque
+tags: Baekjoon Python Deque
 ---
 
 # **5430 - AC**

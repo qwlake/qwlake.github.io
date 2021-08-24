@@ -4,7 +4,7 @@ title: "백준 1149번 - RGB거리"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C DP
+tags: Baekjoon C DP
 ---
 
 [https://www.acmicpc.net/problem/1149](https://www.acmicpc.net/problem/1149)

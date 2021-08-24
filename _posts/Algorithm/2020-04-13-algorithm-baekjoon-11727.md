@@ -4,7 +4,7 @@ title: "백준 11727번 - 2xn 타일링 2"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C++ DP
+tags: Baekjoon C++ DP
 ---
 
 [https://www.acmicpc.net/problem/11727](https://www.acmicpc.net/problem/11727)

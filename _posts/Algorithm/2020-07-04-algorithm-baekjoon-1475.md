@@ -4,7 +4,7 @@ title: "백준 1475번 - 방 번호"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Stack
+tags: Baekjoon Python Stack
 ---
 
 # **1475 - 방 번호**

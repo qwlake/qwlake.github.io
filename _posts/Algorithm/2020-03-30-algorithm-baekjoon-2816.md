@@ -4,7 +4,7 @@ title: "백준 2816번 - 디지털 티비"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java Greedy
+tags: Baekjoon Java Greedy
 ---
 
 [https://www.acmicpc.net/problem/2816](https://www.acmicpc.net/problem/2816)

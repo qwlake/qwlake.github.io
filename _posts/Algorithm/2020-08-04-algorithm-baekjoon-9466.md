@@ -4,7 +4,7 @@ title: "백준 9466 - 텀 프로젝트"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python DFS
+tags: Baekjoon Python DFS
 ---
 
 # **9466 - 텀 프로젝트**

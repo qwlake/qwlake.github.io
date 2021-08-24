@@ -4,7 +4,7 @@ title: "백준 1912번 - 연속합"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C DP
+tags: Baekjoon C DP
 ---
 
 [https://www.acmicpc.net/problem/1912](https://www.acmicpc.net/problem/1912)

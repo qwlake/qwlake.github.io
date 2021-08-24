@@ -4,7 +4,7 @@ title: "백준 9465번 - 스티커"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java DP
+tags: Baekjoon Java DP
 ---
 
 [https://www.acmicpc.net/problem/9465](https://www.acmicpc.net/problem/9465)

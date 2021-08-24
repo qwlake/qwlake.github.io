@@ -4,7 +4,7 @@ title: "백준 4963번 - 섬의 개수"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java DFS Recursive
+tags: Baekjoon Java DFS Recursive
 ---
 
 [https://www.acmicpc.net/problem/4963](https://www.acmicpc.net/problem/4963)

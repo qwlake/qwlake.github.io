@@ -4,7 +4,7 @@ title: "백준 2156번 - 포도주 시식"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C DP
+tags: Baekjoon C DP
 ---
 
 3잔 연속으로 마실 수 없는 것만 기억하면 쉽게 동적 프로그래밍으로 풀 수 있다.

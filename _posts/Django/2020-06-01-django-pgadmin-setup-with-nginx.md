@@ -4,7 +4,7 @@ title: "[Django] pgAdmin 적용과 Nginx 설정"
 subtitle: "+ Docker"
 author: qwlake
 categories: Django
-tags: Django Docker PostgreSQL pgAdmin Nginx
+tags: Docker PostgreSQL pgAdmin Nginx
 ---
 
 # 서론

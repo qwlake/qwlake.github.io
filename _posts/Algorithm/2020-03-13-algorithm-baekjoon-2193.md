@@ -4,7 +4,7 @@ title: "백준 2193번 - 이친구"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C DP
+tags: Baekjoon C DP
 ---
 
 [https://www.acmicpc.net/problem/2193](https://www.acmicpc.net/problem/2193)

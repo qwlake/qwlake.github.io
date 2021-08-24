@@ -4,7 +4,7 @@ title: "백준 2659번 - 십자카드 문제"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI Python
+tags: Baekjoon KOI Python
 ---
 
 [https://www.acmicpc.net/problem/2659](https://www.acmicpc.net/problem/2659)

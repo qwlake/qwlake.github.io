@@ -4,7 +4,7 @@ title: "백준 10845번 - 스택"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Stack
+tags: Baekjoon Python Stack
 ---
 
 # **10845 - 스택**

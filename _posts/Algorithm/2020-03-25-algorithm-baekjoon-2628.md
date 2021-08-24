@@ -4,7 +4,7 @@ title: "백준 2628번 - 종이자르기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon KOI C
+tags: Baekjoon KOI C
 ---
 
 [https://www.acmicpc.net/problem/2628](https://www.acmicpc.net/problem/2628)

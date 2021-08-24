@@ -4,7 +4,7 @@ title: "백준 2579번 - 계단 오르기"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java DP
+tags: Baekjoon Java DP
 ---
 
 다이나믹 프로그래밍 문제다. 나는 자바로 풀었다.

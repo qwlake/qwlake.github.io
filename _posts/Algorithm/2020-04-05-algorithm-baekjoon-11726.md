@@ -4,7 +4,7 @@ title: "백준 11726번 - 2×n 타일링"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python Fibonacci
+tags: Baekjoon Python Fibonacci
 ---
 
 일단 이 문제는 피보나치 수열의 패턴을 갖는 문제다.

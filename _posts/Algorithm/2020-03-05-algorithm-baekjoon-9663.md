@@ -4,7 +4,7 @@ title: "백준 9663번 - N-Queen"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Java BackTracking
+tags: Baekjoon Java BackTracking
 ---
 
 [https://www.acmicpc.net/problem/9663](https://www.acmicpc.net/problem/9663)

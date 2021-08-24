@@ -4,7 +4,7 @@ title: "[Spring] Spring Boot 에서 gRPC로 크롤링 MS 호출하기"
 subtitle: "IntelliJ 설치부터 스프링부트 개념과 도커를 통한 실행까지"
 author: qwlake
 categories: Spring
-tags: Spring gRPC Docker
+tags: gRPC Docker
 ---
 
 # IntelliJ

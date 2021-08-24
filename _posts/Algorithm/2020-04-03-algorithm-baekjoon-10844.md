@@ -4,7 +4,7 @@ title: "백준 10844번 - 쉬운 계단 수"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon C++ DP
+tags: Baekjoon C++ DP
 ---
 
 [https://www.acmicpc.net/problem/10844](https://www.acmicpc.net/problem/10844)

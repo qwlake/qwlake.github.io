@@ -4,7 +4,7 @@ title: "백준 2178번 - 미로 탐색"
 subtitle: ""
 author: qwlake
 categories: Algorithm
-tags: Algorithm Baekjoon Python BFS Deque
+tags: Baekjoon Python BFS Deque
 ---
 
 # **2178 - 미로 탐색**
