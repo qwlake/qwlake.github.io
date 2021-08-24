@@ -3,7 +3,7 @@ layout: post
 title: "[CS] Refactoring"
 author: qwlake
 categories: CS
-tags: -
+tags: refactoring
 ---
 
 - 리펙토링 (리펙터링 2판 - 마틴 파울러)

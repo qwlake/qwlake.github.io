@@ -3,7 +3,7 @@ layout: post
 title: "[CS] Transactional"
 author: qwlake
 categories: CS
-tags: -
+tags: transaction
 ---
 
 # Transactional

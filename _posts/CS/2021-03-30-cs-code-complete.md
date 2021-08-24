@@ -3,7 +3,7 @@ layout: post
 title: "[CS] Code Complete 정리"
 author: qwlake
 categories: CS
-tags: -
+tags: code-complete
 ---
 
 - Code Complete

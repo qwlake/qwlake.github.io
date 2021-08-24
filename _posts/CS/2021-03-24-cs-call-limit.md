@@ -4,7 +4,7 @@ title: "[CS] API Call limit"
 subtitle: "api call limit 구현을 위한 여러 접근방법과 데이터 조작 방법"
 author: qwlake
 categories: CS
-tags: -
+tags: call-limit
 ---
 
 # 자료조사
