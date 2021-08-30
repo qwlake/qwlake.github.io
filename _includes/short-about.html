@@ -1,3 +1,4 @@
+{% if site.short-about %}
 <section class="visible-md visible-lg">
   <hr>
   <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
@@ -12,3 +13,4 @@
     {% include sns-links.html %}
   </div>
 </section>
+{% endif %}
