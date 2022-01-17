@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2493번 - 탑"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

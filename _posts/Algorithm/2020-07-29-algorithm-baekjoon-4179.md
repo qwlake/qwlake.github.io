@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 4179번 - 불!"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python BFS Deque

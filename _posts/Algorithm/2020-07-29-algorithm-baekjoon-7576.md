@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 7576 - 토마토-2차원"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python BFS Deque

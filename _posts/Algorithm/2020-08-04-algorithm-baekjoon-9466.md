@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 9466 - 텀 프로젝트"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python DFS

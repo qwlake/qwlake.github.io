@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 10845번 - 큐"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Queue

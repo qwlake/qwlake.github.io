@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 9663번 - N-Queen"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java BackTracking

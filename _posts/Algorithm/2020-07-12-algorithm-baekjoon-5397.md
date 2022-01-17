@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 5397번 - 키로거"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Deque

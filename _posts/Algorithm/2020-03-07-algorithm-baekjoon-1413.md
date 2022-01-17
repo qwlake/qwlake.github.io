@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1413번 - 박스 안의 열쇠"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C++ DP

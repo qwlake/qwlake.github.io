@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1912번 - 연속합"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C DP

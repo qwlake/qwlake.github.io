@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1475번 - 방 번호"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

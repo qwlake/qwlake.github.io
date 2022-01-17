@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "2019 카카오 겨울 인턴 1번 - 쇠막대기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Programmers Kakao Intern Javascript

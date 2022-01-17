@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1406번 - 에디터"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

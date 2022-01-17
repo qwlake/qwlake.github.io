@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 5430번 - AC"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Deque

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1931번 - 회의실배정"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Greedy

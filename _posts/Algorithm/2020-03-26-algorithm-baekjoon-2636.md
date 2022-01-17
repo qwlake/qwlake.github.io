@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2636번 - 치즈"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI C

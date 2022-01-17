@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 11727번 - 2xn 타일링 2"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C++ DP

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2635번 - 수 이어가기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C Recursive

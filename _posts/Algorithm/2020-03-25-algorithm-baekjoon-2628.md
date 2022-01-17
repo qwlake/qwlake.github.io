@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2628번 - 종이자르기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI C

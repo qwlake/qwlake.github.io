@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[MSA] 크롤링 모듈 MS(Micro Service)로 포팅해서 gRPC 서버로 만들기"
-subtitle: "gRPC 예제 링크와 gRPC 서버, gRPC 클라이언트 실행방법"
+title: "[MSA] 크롤링 모듈 MS(Micro Service)로 포팅해서 gRPC 서버로 만들기 - gRPC 예제 링크와 gRPC 서버, gRPC 클라이언트 실행방법"
 author: qwlake
 categories: MSA
 tags: gRPC Python

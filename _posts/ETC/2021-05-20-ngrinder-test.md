@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Testing] nGrinder"
-subtitle: "nGrinder로 Spring Boot WAS의 성능을 테스트해보자"
+title: "[Testing] nGrinder로 Spring Boot WAS의 성능을 테스트해보자"
 author: qwlake
 categories: ETC
 tags: nGrinder Spring

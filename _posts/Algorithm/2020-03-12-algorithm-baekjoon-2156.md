@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2156번 - 포도주 시식"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C DP

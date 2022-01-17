@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2660번 - 회장뽑기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI Python

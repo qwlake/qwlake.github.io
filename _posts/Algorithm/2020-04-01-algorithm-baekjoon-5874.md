@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 5874번 - 소를 찾아라"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java

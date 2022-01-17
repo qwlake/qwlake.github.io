@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1244번 - 스위치 켜고 끄기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI C

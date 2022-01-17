@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 10845번 - 스택"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

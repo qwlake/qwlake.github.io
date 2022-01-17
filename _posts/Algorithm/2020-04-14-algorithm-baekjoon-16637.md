@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 16637번 - 괄호 추가하기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python

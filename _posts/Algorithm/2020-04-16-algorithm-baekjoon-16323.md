@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 16323번 - Intergalactic Bidding"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python

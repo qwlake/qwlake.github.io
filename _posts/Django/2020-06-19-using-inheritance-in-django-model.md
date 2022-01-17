@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Django] 장고 모델에 상속 사용하기"
-subtitle: "비슷한 모델 여러 개 생성, 상속으로 해결하기"
+title: "[Django] 장고 모델에 상속 사용하기 - 비슷한 모델 여러 개 생성, 상속으로 해결하기"
 author: qwlake
 categories: Django
 tags: Model Inheritance OntoOneField

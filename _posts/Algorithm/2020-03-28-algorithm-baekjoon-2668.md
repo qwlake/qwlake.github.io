@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2668번 - 숫자고르기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI Python

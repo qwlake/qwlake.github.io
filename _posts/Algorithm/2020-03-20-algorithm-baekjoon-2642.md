@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2642번 - 전개도"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI C DP

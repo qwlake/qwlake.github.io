@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Django] pytest를 사용한 장고 테스트 환경 구축"
-subtitle: "+ pytest Docker"
+title: "[Django] pytest를 사용한 장고 테스트 환경 구축 (feat. pytest Docker)"
 author: qwlake
 categories: Django
 tags: test pytest Docker

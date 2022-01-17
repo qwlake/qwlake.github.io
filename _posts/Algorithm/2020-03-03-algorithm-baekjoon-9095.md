@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 9095번 - 1,2,3 더하기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python DP

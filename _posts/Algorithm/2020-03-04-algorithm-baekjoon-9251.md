@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 9251번 - LCS"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python DP LCS

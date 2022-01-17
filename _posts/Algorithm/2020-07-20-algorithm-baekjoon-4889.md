@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 4889번 - 안정적인 문자열"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

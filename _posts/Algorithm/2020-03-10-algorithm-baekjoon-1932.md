@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1932번 - 정수 삼각형"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C DP

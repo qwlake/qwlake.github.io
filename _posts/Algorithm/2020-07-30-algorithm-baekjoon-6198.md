@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 4179 - 옥상 정원 꾸미기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Stack

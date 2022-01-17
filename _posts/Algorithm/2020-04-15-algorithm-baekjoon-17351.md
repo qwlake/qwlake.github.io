@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 17351번 - 3루수는 몰라"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python DP

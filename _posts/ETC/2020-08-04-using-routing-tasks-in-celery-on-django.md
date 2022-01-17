@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "[Celery] Django 프로젝트에서 Celery Worker 제한하기"
-subtitle: ""
 author: qwlake
 categories: ETC
 tags: Celery Django

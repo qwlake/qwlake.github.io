@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2178번 - 미로 탐색"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python BFS Deque

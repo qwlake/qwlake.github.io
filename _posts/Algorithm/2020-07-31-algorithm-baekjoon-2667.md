@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2667 - 단지번호붙이기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C++ DFS

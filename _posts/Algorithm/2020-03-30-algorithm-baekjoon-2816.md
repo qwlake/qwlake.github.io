@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2816번 - 디지털 티비"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java Greedy

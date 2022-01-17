@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 4963번 - 섬의 개수"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java DFS Recursive

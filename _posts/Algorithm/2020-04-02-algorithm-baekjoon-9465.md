@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 9465번 - 스티커"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java DP

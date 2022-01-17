@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 11053번 - 가장 긴 증가하는 부분 수열"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C++ DP

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1149번 - RGB거리"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C DP

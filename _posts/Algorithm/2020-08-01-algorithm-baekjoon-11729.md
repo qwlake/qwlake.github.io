@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 11729 - 하노이 탑 이동 순서"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Recursive DivideAndConquer

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2643번 - 색종이 올려 놓기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI C Python DP

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "백준 2193번 - 이친구"
-subtitle: ""
+
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C DP

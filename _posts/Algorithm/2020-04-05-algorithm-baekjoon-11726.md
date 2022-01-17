@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 11726번 - 2×n 타일링"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Fibonacci

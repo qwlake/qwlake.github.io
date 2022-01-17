@@ -8,7 +8,7 @@ tags: jpa
 
 # JPA
 
-[김영한씨 Jpa 책 정리 블로그](https://parkhyeokjin.github.io/category/jpa.html)
+[김영한님 Jpa 책 정리 블로그](https://parkhyeokjin.github.io/category/jpa.html)
 
 - 프록시( proxy )와 지연로딩
 
@@ -72,19 +72,17 @@ tags: jpa
 
 - 프록시 (Proxy)
 
-    ### 지연로딩이란
+    - 지연로딩이란
 
-    엔티티 조회시 프록시 객체가 조회됨. 해당 객체로부터 값을 꺼내 사용할 때 쿼리 조회 시작.
+        엔티티 조회시 프록시 객체가 조회됨. 해당 객체로부터 값을 꺼내 사용할 때 쿼리 조회 시작. 연관된 객체가 존재할 경우 따로따로 SELECT함
 
-    연관된 객체가 존재할 경우 따로따로 SELECT함
+    - 즉시로딩이란
 
-    ### 즉시로딩이란
+        조회에 필요한 모든 테이블을 left outer join 하여 SELECT 쿼리 즉시 실행. (외래키가 null이 허용될 때)
 
-    조회에 필요한 모든 테이블을 left outer join 하여 SELECT 쿼리 즉시 실행. (외래키가 null이 허용될 때)
+        하지만 `@JoinColumn(name="category_no", nullable=false)` 처럼 nullable을 false로 설정하면 inner join으로 동작한다.
 
-    하지만 `@JoinColumn(name="category_no", nullable=false)` 처럼 nullable을 false로 설정하면 inner join으로 동작한다.
-
-    ### 프록시 사용 방법
+- 프록시 사용 방법
 
     ```java
     public void findMemberAndTeacher(String id){
@@ -100,7 +98,7 @@ tags: jpa
     ![image](https://user-images.githubusercontent.com/41278416/130638526-efa18857-39e2-4387-8ef1-6de82b23dc64.png)
 
 
-    **기본 전략:**
+**기본 전략:**
 
-    - @ManyToOne, @OneToOne : FetchType.EAGER (즉시로딩)
-    - @OneToMany, @ManyToMany : FetchType.LAZY (지연로딩)
+- @ManyToOne, @OneToOne : FetchType.EAGER (즉시로딩)
+- @OneToMany, @ManyToMany : FetchType.LAZY (지연로딩)

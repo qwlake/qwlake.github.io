@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Django] 장고 Rest API 서버 https 프로토콜 적용하기"
-subtitle: "nginx가 있을 때는 어떡하지?"
+title: "[Django] 장고 Rest API 서버 https 프로토콜 적용하기 (feat. nginx)"
 author: qwlake
 categories: Django
 tags: Model Inheritance OntoOneField
@@ -47,26 +46,18 @@ openssl req -new -x509 -nodes -sha256 -days 365 -key django.key > django.crt
 
 ## nginx가 있을 때
 
-난 처음에는 nginx가 있어도 Django에 `sslserver` 를 설치해야 하는줄 알았다. 그런데 그게 아니고 제일 앞단, 그러니까 nginx에만 https 설정을 해주면 되는 것이었다. 꽤 삽질을 많이 한 부분이다. Django는 그냥 그대로 가면 된다.
+당신이 ssl 설정을 적용하려 한다면 배포를 한다는 뜻이고, 이는 곧 web server를 사용하고 있다는 뜻일 것이다. 설마 배포하는데 WAS(Django)만 달랑 배포하는 일은 없길 바란다. 그 이유는 [여기](https://velog.io/@woo00oo/Web-Server%EC%99%80-WAS) 를 참조.
 
-`nginx/default.conf` 파일(nginx 설정 파일)을 다음과 같이 바꾼다. 코드상에서 80번 포트를 `listen` 하고 있는 server가 기존 것이다. 그 아래에 443번 포트를 `listen` 하고 있는 server가 https 접속을 받는 것이다(참고로 http 접속시 기본 포트는 80번, https 접속시 기본 포트는 443번으로 들어온다).
+https는 제일 앞단인 web server에만 적용시키면 된다. 어자피 web server와 was간의 통신은 외부를 거치는게 아니고 내부간의 통신일테니.
 
-나는 일단 아래와 같이 http와 https 둘 다 살려두었다. 추후에 80번 포트로 접속해도 https 프로토콜로 대응하는쪽으로 변경할 예정이다.
+`nginx/default.conf` 파일(nginx 설정 파일)을 다음과 같이 바꾼다. 
 
 ```
 server {
     listen 80;
 
-    access_log /var/log/nginx/80_access.log;
-    error_log /var/log/nginx/80_error.log;
-
     location / {
-        proxy_set_header Host $host:$server_port;
-        proxy_pass http://web:8080;
-        proxy_redirect off;
-    }
-    location /static/ {
-        alias /home/knu_notice/.static_root/;
+         return 301 https://$host$request_uri;
     }
 }
 
@@ -120,18 +111,12 @@ services:
 
 ## nginx가 없을 때
 
+굳이 web server 없이 쓰겠다면 아래와 같이 진행하면 된다.
+
 1. `django-sslserver` 설치
-    - `requirements.txt` 를 쓴다면 다음을 해당 파일에 추가한다.
-
-        ```
-        django-sslserver==0.22
-        ```
-
-    - 그게 아니라면 다음과 같이 `django-sslserver` 를 설치한다.
-
-        ```bash
-        pip install django-sslserver
-        ```
+    ```bash
+    pip install django-sslserver
+    ```
 
 2. `settings.py` 의 `INSTALLED_APPS` 에 `sslserver` 를 추가한다.
 

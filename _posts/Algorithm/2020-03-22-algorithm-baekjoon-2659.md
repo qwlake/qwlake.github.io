@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2659번 - 십자카드 문제"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon KOI Python

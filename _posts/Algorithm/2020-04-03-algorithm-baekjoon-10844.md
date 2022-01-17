@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 10844번 - 쉬운 계단 수"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon C++ DP

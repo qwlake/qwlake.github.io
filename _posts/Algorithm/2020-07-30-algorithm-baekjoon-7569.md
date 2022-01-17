@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 7569 - 3차원 토마토"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python BFS Deque

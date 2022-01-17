@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2146 - 다리 만들기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python Combination Deque BFS

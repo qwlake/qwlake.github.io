@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Server] Server shutdown problem"
-subtitle: "Django memory leak with scrapy"
+title: "[Server] Server shutdown problem - Django memory leak with scrapy"
 author: qwlake
 categories: ETC
 tags: Server Django Scrapy memory-leak

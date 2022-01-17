@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 1463번 - 1로 만들기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Python DP

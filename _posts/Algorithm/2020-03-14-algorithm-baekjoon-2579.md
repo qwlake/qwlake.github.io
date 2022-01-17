@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "백준 2579번 - 계단 오르기"
-subtitle: ""
 author: qwlake
 categories: Algorithm
 tags: Baekjoon Java DP

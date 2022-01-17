@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Spring] Spring webflux(w/r2dbc) performance test"
-subtitle: "webflux, tomcat, jdbc, r2dbc 를 교차로 조합하여 nGrinder로 성능을 비교한다"
+title: "[Spring] Spring webflux(w/r2dbc) performance test - webflux, tomcat, jdbc, r2dbc 를 교차로 조합하여 nGrinder로 성능을 비교한다"
 author: qwlake
 categories: Spring
 tags: webflux r2dbc tomcat jdbc nGrinder

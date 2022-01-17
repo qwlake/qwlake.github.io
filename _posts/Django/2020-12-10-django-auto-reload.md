@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[Django] Django auto reload"
-subtitle: "with gunicorn '--reload' option"
+title: "[Django] Django auto reload (with. gunicorn '--reload' option)"
 author: qwlake
 categories: Django
 tags: gunicorn
