@@ -98,7 +98,11 @@ tags: jpa
     ![image](https://user-images.githubusercontent.com/41278416/130638526-efa18857-39e2-4387-8ef1-6de82b23dc64.png)
 
 
-**기본 전략:**
+- 기본 전략
+    - @ManyToOne, @OneToOne : FetchType.EAGER (즉시로딩)
+    - @OneToMany, @ManyToMany : FetchType.LAZY (지연로딩)
 
-- @ManyToOne, @OneToOne : FetchType.EAGER (즉시로딩)
-- @OneToMany, @ManyToMany : FetchType.LAZY (지연로딩)
+
+- N+1 Problem
+    - EAGER 조회 시 연관된 테이블 모두 조인하여 가져옴 → N+1 번의 조인 연산 발생
+    - LAZY 조회 시 연관된 테이블마다 SELECT 연산 일어남 → N+1 번의 조회 연산 발생
