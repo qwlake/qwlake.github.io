@@ -3,8 +3,8 @@ title: qwlake's Blog
 SEOTitle: qwlake's Blog
 header-img: img/home-bg.jpg
 email: qwlake@gmail.com
-description: "웹 서버와 안드로이드 어플리케이션, 머신러닝에 관심이 많습니다. 언어는 주로 Python(Django), Kotlin을 사용하며, Kaggle의 Competitions 참가를 즐깁니다. 개발시 TDD를 중요시 여기며, Docker를 사용한 환경을 선호합니다."
-keyword: "DevOps, Server, Cloud, Docker, Django"
+description: "qwlake's Blog"
+keyword: "Backend, Server, Developer, Engineer"
 url: "https://qwlake.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
